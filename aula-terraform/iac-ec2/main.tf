@@ -75,7 +75,7 @@ data "aws_ami" "ubuntu" {
 
 resource "aws_key_pair" "deployer" {
   key_name   = "video-imersao"
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCcRR6JO5pWMWkZNMlQpUxqFn0anbAh/XmW65ljcNp2fL2GbkJF1NuDiAQdsPHJldNSim4D1O9n5KA/Y3NYpgCUr8gW5AoeP0GHfMIK10BH4oyJRHqiODUACfCWBePOMiyDU2MI6I6FmLcsCjAs/BY9OQunPx7ZZCblkSJgvarxC7lOHZGu2tPcexDUZMf72/3SsKzVFozbSI7nrsBCuBqcnVMiH72ClHHA7V971MXwvvOnlU1hjrt20ZTN1IuTqal7REfhYp53NVRaWBrdjiikTTqYbryMHXGdXdbREtbWAuXqndBSRWv+IfgjKIthLcQnmyLEJnBKK3Y0hJlhz9GF/+bAlC10fwK0LWD/rBPfxCCRCBPzX7dleN9EpBPAmZoDiXWKtpJzDOIoLOw/v3+f4q1u8WSyzvS0YzGhSMSOs3+EZFxkUozyqV/UKEXHUIQyovsPmGB5eDf0kQpUjkg4QYWPxOmPwS2CqY8v9JaPLl+nU4v6qoAeBODoJScDUf8= usuario@ramper03"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCc"
 }
 
 
