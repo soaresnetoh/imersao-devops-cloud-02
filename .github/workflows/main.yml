@@ -16,7 +16,14 @@ jobs:
         password: ${{secrets.DOCKERHUB_PWD}} 
       
     - name: Envia a imagem para o docker registry
-      run: echo "executar o docker build e push"
+      uses: docker/build-push-action@v5.0.0
+      with:
+        context: ./kube-news/src
+        file: ./kube-news/src/Dockerfile
+        push: true
+        tags: |
+          hernanisoares/kube-news:${{} github.run_number }
+          hernanisoares/kube-news:latest
       
   CD:
     runs-on: ubuntu-latest
