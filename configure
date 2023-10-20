@@ -1,0 +1,33 @@
+usando eks
+
+criar role eks-clusterRole
+eks
+eks-cluster
+tag-projeto-imersao
+
+
+criar infra com cloudformation - eks-imersao-net
+https://s3.us-west-2.amazonaws.com/amazon-eks/cloudformation/2020-10-29/amazon-eks-vpc-private-subnets.yaml
+tag-projeto-imersao
+
+criar cluster-eks-imersao
+tag-projeto-imersao
+selecionar grupo de seg
+acesso privado e publico
+
+
+criar role para os node-groups - ec2-worker-node
+ec2
+CNI
+WorkerNode
+EC2ContainerRegistry - read-only
+tag-projeto-imersao
+
+
+Criar node-group - default
+tag-projeto-imersao
+definir redes privadas
+
+
+aws eks update-kubeconfig --name eks-imersao
+
