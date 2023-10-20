@@ -7,7 +7,7 @@ on:
 
   jobs:
     CI:
-      run-on: ubuntu-latest
+      runs-on: ubuntu-latest
       steps:
       - name: Construir a imagem de container
         run: echo "executar o docker build"
@@ -19,7 +19,7 @@ on:
         run: echo "executar o docker push"
         
     CD:
-      run-on: ubuntu-latest
+      runs-on: ubuntu-latest
       steps:
       - name: Autenticar na AWS
         run: echo "Autenticar na AWS"
