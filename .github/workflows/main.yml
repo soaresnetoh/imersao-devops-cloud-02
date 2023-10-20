@@ -44,8 +44,14 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_ACCESS_SECRET_KEY }}
       
     - name: Configurar o kubeconfig
-      run: echo "Configurar o kubeconfig"
+      run: aws eks update-kubeconfig --name eks-imersao --REGION US-EAST-1
       
     - name: Aplicar o deploy
-      run: echo "Aplicar o deploy"
+      uses: Azure/k8s-deploy@v4.9
+      with:
+        manifests: |
+          ./kube-news/k8s/deployment.yml
+        images: |
+          hernanisoares/kube-news:${{ github.run_number }}
+        
       
